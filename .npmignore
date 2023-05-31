@@ -1,0 +1,9 @@
+node_modules/
+src/
+test/
+index.html
+public/
+vite.config.ts 
+tsconfig.json
+*.svg
+package.json

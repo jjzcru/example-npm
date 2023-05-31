@@ -1,0 +1,32 @@
+{
+  "name": "@jjzcru/example-npm",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "main": "./dist/exampler.umd.cjs",
+  "module": "./dist/exampler.js",
+  "types": "./dist/index.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jjzcru/example-npm.git"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  },
+  "exports": {
+    ".": {
+      "import": "./dist/exampler.js",
+      "require": "./dist/exampler.umd.cjs"
+    }
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "typescript": "^5.0.2",
+    "vite": "^4.3.9",
+    "vite-plugin-dts": "^2.3.0"
+  }
+}
